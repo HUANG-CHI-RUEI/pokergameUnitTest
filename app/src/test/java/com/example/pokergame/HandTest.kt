@@ -77,7 +77,7 @@ class HandTest {
     }
 
     @Test
-    fun `flush should win Full house`() {
+    fun `Full house should win flush`() {
         // Arrange
         val cards = listOf(
             Card.create(1, Suit.Heart),
@@ -106,7 +106,7 @@ class HandTest {
     }
 
     @Test
-    fun `Full house should win flush`() {
+    fun `flush should not win Full house`() {
         // Arrange
         val cards = listOf(
             Card.create(1, Suit.Heart),

@@ -2,7 +2,6 @@ package com.example.pokergame
 
 import org.junit.Assert
 import org.junit.Test
-import java.lang.Exception
 import java.lang.IllegalArgumentException
 
 class CardTest {
@@ -12,7 +11,7 @@ class CardTest {
         val card = Card.create(1, Suit.Heart)
         val expect = "Heart of Ace"
         // Act
-        val result = card.toString();
+        val result = card.toString()
         // Assert
         Assert.assertEquals(expect, result)
     }
@@ -23,7 +22,7 @@ class CardTest {
         val card = Card.create(2, Suit.Heart)
         val expect = "Heart of Two"
         // Act
-        val result = card.toString();
+        val result = card.toString()
         // Assert
         Assert.assertEquals(expect, result)
     }
@@ -43,12 +42,12 @@ class CardTest {
     }
 
     @Test
-    fun verifyDimondTwo() {
+    fun verifyDiamondTwo() {
         // Arrange
         val card = Card.create(2, Suit.Diamond)
         val expect = "Diamond of Two"
         // Act
-        val result = card.toString();
+        val result = card.toString()
         // Assert
         Assert.assertEquals(expect, result)
     }
