@@ -30,7 +30,7 @@ class Card private constructor(val number: Int, val suit: Suit) {
             9 -> "Nine"
             10 -> "Ten"
             11 -> "Jack"
-            12 -> "Quenn"
+            12 -> "Queen"
             13 -> "King"
 
             else -> TODO()
